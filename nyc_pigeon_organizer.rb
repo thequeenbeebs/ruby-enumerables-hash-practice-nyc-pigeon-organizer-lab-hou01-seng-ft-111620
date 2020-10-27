@@ -25,10 +25,10 @@ def nyc_pigeon_organizer(data)
     value.each do |inner_key, names|
       names.each do |name|
         final_array[name] = {key => [inner_key.to_s]}
-        binding.pry
       end
     end
   end
+  binding.pry
 end
 
 
