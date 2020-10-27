@@ -26,8 +26,8 @@ def nyc_pigeon_organizer(data)
       data[attribute][adjective].each do |array_of_names|
         new_hash[array_of_names] = {}
       end
-      binding.pry
       new_hash[array_of_names][attribute].push(data[attribute])
+      binding.pry
     end
   end
   new_hash
