@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
   data.each_with_object({}) do |(key, value), final_array|
     value.each do |inner_key, names|
       names.each do |name|
-        final_array[name] = {key => inner_key}
+        final_array[name] = {key => [inner_key.to_s]}
         binding.pry
       end
     end
