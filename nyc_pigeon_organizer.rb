@@ -25,9 +25,7 @@ def nyc_pigeon_organizer(data)
     value.each do |inner_key, names|
       names.each do |name|
         if !final_array[name]
-          final_array[name] = {key => [inner_key.to_s]}
-        else
-          final_array[name][key].push(inner_key.to_s)
+          final_array[name] = {}
         end
       end
     end
