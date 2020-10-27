@@ -27,7 +27,6 @@ def nyc_pigeon_organizer(data)
         new_hash[array_of_names] = {}
       end
     end
-  new_hash[array_of_names][attribute] = []
   end
   binding.pry
   new_hash
